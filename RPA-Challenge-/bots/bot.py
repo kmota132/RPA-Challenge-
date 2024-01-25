@@ -135,13 +135,14 @@ class BotNoticias():
                         var jsonStringCombined = JSON.stringify(jsonDataCombined, null, 2);
 
                         return jsonStringCombined;
- """)
+                     """)
                 n = 1              
             except Exception as error:
                 print(f"Erro ao buscar as notias: {e}")
                 time.sleep(2) 
             
             print(noticias)
+
 
             J['noticias'] = noticias
             n = 0
